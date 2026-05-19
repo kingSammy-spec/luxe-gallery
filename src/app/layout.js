@@ -1,4 +1,5 @@
 import Script from 'next/script';
+import type { Metadata } from 'next';
 
 export const metadata = {
   title: 'Luxe Gallery | Elite AI-Generated Digital Art Collection',
