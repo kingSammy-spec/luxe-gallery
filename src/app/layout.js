@@ -6,7 +6,7 @@ export const metadata = {
   keywords: ['AI art', 'digital art gallery', 'AI generated art', 'NFT art', 'digital artwork', 'generative art', 'AI gallery', 'luxury art', 'luxe gallery', 'contemporary digital art'],
   authors: [{ name: 'Luxe Gallery' }],
   other: {
-    'google-site-verification': 'google27fcd6f303a9589c'
+    'google-adsense-account': 'ca-pub-7322019754286753'
   },
   robots: {
     index: true,
