@@ -1,5 +1,6 @@
-export const metadata = {
 import Script from 'next/script';
+
+export const metadata = {
   title: 'Luxe Gallery | Elite AI-Generated Digital Art Collection',
   description: 'Explore a curated collection of elite AI-generated digital artwork. Where technology meets aesthetic beauty — discover, admire, and collect stunning digital art.',
   keywords: ['AI art', 'digital art gallery', 'AI generated art', 'NFT art', 'digital artwork', 'generative art', 'AI gallery', 'luxury art', 'luxe gallery', 'contemporary digital art'],
@@ -31,12 +32,14 @@ import Script from 'next/script';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}      <Script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7322019754286753"
-        crossOrigin="anonymous"
-        strategy="afterInteractive"
-      />
+      <body>
+        {children}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7322019754286753"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )
