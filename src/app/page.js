@@ -135,8 +135,8 @@ export default function Home() {
       {showPremiumModal && (
         <div className="modal-overlay" style={{position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.85)', zIndex: 3000, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <div className="modal-content" style={{background: '#000', padding: '4rem 3rem', borderRadius: '20px', maxWidth: '500px', width: '90%', textAlign: 'center', border: '1px solid #fff', position: 'relative'}}>
-            <button onClick={() => setShowPremiumModal(false)} style={{position: 'absolute', top: '1rem', right: '1.5rem', background: 'none', border: 'none', color: '#fff', fontSize: '2rem', cursor: 'pointer'}}×</button>
-            <h2 style={{fontSize: '2.5rem', marginBottom: '1rem', color: '#fff'}}>LUXE <span style={{color: '#fff'}}}>PRO</span></h2>
+            <button onClick={() => setShowPremiumModal(false)} style={{position: 'absolute', top: '1rem', right: '1.5rem', background: 'none', border: 'none', color: '#fff', fontSize: '2rem', cursor: 'pointer'}}>&times;</button>
+            <h2 style={{fontSize: '2.5rem', marginBottom: '1rem', color: '#fff'}}>LUXE <span style={{color: '#fff'}}>PRO</span></h2>
             <p style={{color: '#aaa', fontSize: '1.1rem', marginBottom: '2rem'}}>Unlock an ad-free browsing experience, early access to exclusive collections, and premium member benefits.</p>
             <button onClick={() => {setAdsDisabled(true); setShowPremiumModal(false); setShowFloatingAd(false);}} style={{width: '100%', padding: '1.2rem', background: '#fff', border: 'none', color: '#000', fontSize: '1.2rem', fontWeight: 'bold', borderRadius: '8px', cursor: 'pointer', marginBottom: '1rem'}}>
               Upgrade for $9.99/mo
@@ -158,7 +158,7 @@ export default function Home() {
           </div>
           <div style={{display: 'flex', gap: '1rem', alignItems: 'center'}}>
             <button style={{background: '#fff', color: '#000', border: 'none', padding: '0.5rem 1rem', borderRadius: '6px', fontWeight: 'bold', cursor: 'pointer', fontSize: '0.85rem'}}>View</button>
-            <button onClick={() => setShowFloatingAd(false)} style={{background: 'none', border: 'none', color: '#888', fontSize: '1.5rem', cursor: 'pointer'}}>×</button>
+            <button onClick={() => setShowFloatingAd(false)} style={{background: 'none', border: 'none', color: '#888', fontSize: '1.5rem', cursor: 'pointer'}}>&times;</button>
           </div>
         </div>
       )}
