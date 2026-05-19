@@ -1,11 +1,13 @@
 import Script from 'next/script';
-import type { Metadata } from 'next';
 
 export const metadata = {
   title: 'Luxe Gallery | Elite AI-Generated Digital Art Collection',
   description: 'Explore a curated collection of elite AI-generated digital artwork. Where technology meets aesthetic beauty — discover, admire, and collect stunning digital art.',
   keywords: ['AI art', 'digital art gallery', 'AI generated art', 'NFT art', 'digital artwork', 'generative art', 'AI gallery', 'luxury art', 'luxe gallery', 'contemporary digital art'],
   authors: [{ name: 'Luxe Gallery' }],
+  verification: {
+    google: 'google27fcd6f303a9589c'
+  },
   robots: {
     index: true,
     follow: true,
