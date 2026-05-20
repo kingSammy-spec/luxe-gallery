@@ -33,8 +33,23 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Luxe Gallery",
+    "description": "Explore a curated collection of elite AI-generated digital artwork. Where technology meets aesthetic beauty — discover, admire, and collect stunning digital art.",
+    "url": "https://luxe-gallery.vercel.app"
+  };
+
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body>
         {children}
         <Script
